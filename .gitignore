@@ -1,0 +1,45 @@
+# === JAVA ===
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# === DIRECTORIOS DE COMPILACIÓN ===
+/bin/
+/out/
+/target/
+/build/
+
+# === ECLIPSE ===
+.classpath
+.project
+.settings/
+
+# === INTELLIJ IDEA ===
+.idea/
+*.iml
+*.iws
+
+# === SISTEMA OPERATIVO ===
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# === ARCHIVOS TEMPORALES ===
+*.tmp
+*.swp
+*.swo
+
+# === ARCHIVOS DE BACKUP ===
+*~
+*.bak
+
+# === ARCHIVOS DE CONFIGURACIÓN PERSONALES ===
+/.vscode/
+/.gradle/
+/mvnw
+/mvnw.cmd
