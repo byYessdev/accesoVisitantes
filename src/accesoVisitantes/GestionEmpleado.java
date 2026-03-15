@@ -42,10 +42,10 @@ public class GestionEmpleado {
     }
 
     // Listar empleados por departamento
-    public void listarPorDepartamento(DepartamentoExtTelefono depto) {
+    public void listarPorDepartamento(DepartamentoExtension depto) {
         System.out.println("\n--- EMPLEADOS DEL DEPARTAMENTO " + depto + " ---");
         for (Empleado e : empleados) {
-            if (e.getDepartamento() == depto) {
+            if (e.getDepartamentoExtension() == depto) {
                 System.out.println(e);
             }
         }

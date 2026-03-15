@@ -10,15 +10,15 @@ public class Empleado {
     private int idEmpleado;
     private String nombre;
     private String apellidos;
-    private DepartamentoExtTelefono departamento;
+    private DepartamentoExtension departamentoExtension;
     private List<Visitante> visitantesRecibidos = new ArrayList<>();
 
     // Constructor CORRECTO (sin idEmpleado)
-    public Empleado(String nombre, String apellidos, DepartamentoExtTelefono departamento) {
+    public Empleado(String nombre, String apellidos, DepartamentoExtension departamento) {
         this.idEmpleado = contador++; // ID autoincremental
         this.nombre = nombre;
         this.apellidos = apellidos;
-        this.departamento = departamento;
+        this.departamentoExtension = departamento;
     }
 
     public void registrarVisita(Visitante v) {
@@ -62,8 +62,8 @@ public class Empleado {
         return apellidos;
     }
 
-    public DepartamentoExtTelefono getDepartamento() {
-        return departamento;
+    public DepartamentoExtension getDepartamentoExtension() {
+        return departamentoExtension;
     }
 
     public List<Visitante> getVisitantesRecibidos() {

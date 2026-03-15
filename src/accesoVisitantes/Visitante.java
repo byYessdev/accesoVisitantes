@@ -7,24 +7,30 @@ public class Visitante {
 	private String idVisitante;
 	private String nombre;
 	private String empresa;
+	private String telefono;
+    private String email;
 	private LocalDateTime fechaVisita;
 	private EstadoVisita estadoVisita;
 	private Empleado empleadoAVisitar;
 	
-	public Visitante(String idVisitante, String nombre, String empresa, LocalDateTime fechaVisita,
+	public Visitante(String idVisitante, String nombre, String empresa, String telefono, String email, LocalDateTime fechaVisita,
 			EstadoVisita estadoVisita) {
 		this.idVisitante = idVisitante;
 		this.nombre = nombre;
 		this.empresa = empresa;
+		this.telefono = telefono;
+		this.email = email;
 		this.fechaVisita = fechaVisita;
 		this.estadoVisita = estadoVisita;
 	}
 	
-	public Visitante(String idVisitante, String nombre, String centroEducativo) {
+	public Visitante(String idVisitante, String nombre, String centroEducativo, String telefono, String email) {
 		super();
 		this.idVisitante = idVisitante;
 		this.nombre = nombre;
 		this.empresa = centroEducativo;
+		this.telefono = telefono;
+		this.email = email;
 	}
 	
 	public void registrarEntrada() {
@@ -43,7 +49,7 @@ public class Visitante {
 
 	
 	public void marcarNoAcude() {
-	    this.estadoVisita = EstadoVisita.NO_ACUDIO;
+	    this.estadoVisita = EstadoVisita.NO_ACUDE;
 	    System.out.println("El visitante " + nombre + " no acudió a su cita.");
 	}
 	
@@ -124,6 +130,21 @@ public class Visitante {
 		this.empleadoAVisitar = empleadoAVisitar;
 	}
 	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
 	
 
 }

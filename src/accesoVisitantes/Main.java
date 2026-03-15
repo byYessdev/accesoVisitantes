@@ -40,9 +40,9 @@ public class Main {
 
 	// ---------------- CARGA INICIAL ----------------
 	private static void cargarEmpleadosIniciales() {
-		gestionEmpleado.agregarEmpleado(new Empleado("Ana", "López", DepartamentoExtTelefono.INFORMATICA));
-		gestionEmpleado.agregarEmpleado(new Empleado("Carlos", "Ruiz", DepartamentoExtTelefono.ADMINISTRACION));
-		gestionEmpleado.agregarEmpleado(new Empleado("Lucía", "Martín", DepartamentoExtTelefono.DIRECCION));
+		gestionEmpleado.agregarEmpleado(new Empleado("Ana", "López", DepartamentoExtension.INFORMATICA));
+		gestionEmpleado.agregarEmpleado(new Empleado("Carlos", "Ruiz", DepartamentoExtension.ADMINISTRACION));
+		gestionEmpleado.agregarEmpleado(new Empleado("Lucía", "Martín", DepartamentoExtension.DIRECCION));
 
 	}
 

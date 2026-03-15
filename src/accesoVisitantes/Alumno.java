@@ -9,21 +9,19 @@ public class Alumno extends Visitante {
     private String centroEducativo;
     private String curso;
     private String tutor;
-    private String telefono;
-    private String email;
+    
 
     public Alumno(String dni, String nombre, String centroEducativo,
                   String curso, String tutor, String telefono, String email) {
 
         // Llama al constructor de Visitante para alumnos
-        super(dni, nombre, centroEducativo);
+        super(dni, nombre, centroEducativo, telefono, email);
 
         this.dni = dni;
         this.centroEducativo = centroEducativo;
         this.curso = curso;
         this.tutor = tutor;
-        this.telefono = telefono;
-        this.email = email;
+        
     }
 
 	public void solicitarCita(Empleado empleado) {
@@ -83,20 +81,5 @@ public class Alumno extends Visitante {
 		this.tutor = tutor;
 	}
 
-	public String getTelefono() {
-		return telefono;
-	}
-
-	public void setTelefono(String telefono) {
-		this.telefono = telefono;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
 
 }

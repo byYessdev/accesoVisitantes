@@ -4,7 +4,7 @@ public enum EstadoVisita {
 	PENDIENTE,
 	EN_CURSO,
 	FINALIZADA,
-	NO_ACUDIO,
+	NO_ACUDE,
 	CANCELADA
 	
 

@@ -1,6 +1,6 @@
 package accesoVisitantes;
 
-public enum DepartamentoExtTelefono {
+public enum DepartamentoExtension {
 	
 	FORMACION(1001),
 	PRACTICAS(1002),
@@ -12,7 +12,7 @@ public enum DepartamentoExtTelefono {
 	
 	private int extension;
 	
-	private DepartamentoExtTelefono(int extension) {
+	private DepartamentoExtension(int extension) {
 		this.extension = extension;
 	}
 	
