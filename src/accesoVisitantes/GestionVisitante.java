@@ -42,6 +42,20 @@ public class GestionVisitante {
         }
         return null;
     }
+    
+    //Buscar por estado de la visita
+    public List<Visitante> buscarPorEstado(EstadoVisita estado) {
+        List<Visitante> resultado = new ArrayList<>();
+
+        for (Visitante v : visitantes) {
+            if (v.getEstadoVisita() == estado) {
+                resultado.add(v);
+            }
+        }
+
+        return resultado;
+    }
+
 
     // Listar todos los visitantes
     public void listarVisitantes() {
